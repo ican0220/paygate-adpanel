@@ -69,7 +69,7 @@ export default function Reseller() {
 
       <SideBar/>
 
-      <div className="p-4 sm:ml-64 bg-[#1f2843] text-white">
+      <div className="p-4 sm:ml-64 bg-transparent text-neutral-800">
         <div className="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
           <div>
           <button type="button" className="border-2 border-blue-500 px-[10px] rounded-3xl">Reseller</button>
@@ -80,7 +80,7 @@ export default function Reseller() {
                 {tableHead.map((_, index) => (
                   <th
                     scope="col"
-                    className="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500 bg-[#1f2843]"
+                    className="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500 bg-transparent"
                     key={index}
                   >
                     {_.title}
@@ -92,27 +92,26 @@ export default function Reseller() {
               {tableData.map((_, index) => (
                 <tr
                   key={index}
-                  className="hover:cursor-pointer odd:bg-[#1f2843] even:bg-[#262e48] hover:bg-[#2e3755] dark:odd:bg-neutral-800 dark:even:bg-neutral-700 dark:hover:bg-neutral-700"
+                  className="hover:cursor-pointer odd:bg-neutral-200 even:bg-neutral-300 hover:bg-neutral-400 dark:odd:bg-neutral-800 dark:even:bg-neutral-700 dark:hover:bg-neutral-700"
                 >
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-neutral-200">
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium ">
                     {_.seller_id}
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm  text-neutral-200">
+                  <td className="px-6 py-4 whitespace-nowrap text-sm  ">
                     {_.email}
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm  text-neutral-200">
+                  <td className="px-6 py-4 whitespace-nowrap text-sm  ">
                     {_.domain}
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm  text-neutral-200">
+                  <td className="px-6 py-4 whitespace-nowrap text-sm  ">
                     {_.balance}
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm  text-neutral-200">
+                  <td className="px-6 py-4 whitespace-nowrap text-sm  ">
                     <button type="button" className=" border border-blue-500 rounded-xl px-[20px]">View Details</button>
                   </td>
                 </tr>
               ))}
             </tbody>
-            192.168.149.206
           </table>
         </div>
       </div>

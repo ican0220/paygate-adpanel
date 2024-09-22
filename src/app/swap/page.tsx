@@ -91,9 +91,9 @@ export default function Swap() {
 
       <SideBar />
 
-      <div className="p-4 sm:ml-64 bg-[#1f2843]">
-        <h1 className="text-center text-white">SWAP</h1>
-        <div className="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14 text-white">
+      <div className="p-4 sm:ml-64 bg-transparent">
+        <h1 className="text-cente">SWAP</h1>
+        <div className="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-1">
           <div className="flex justify-around items-center w-[400px] mx-auto">
             <Image src={"/cryptos/eth.svg"} alt="" width={50} height={50} />
             <svg
@@ -118,7 +118,7 @@ export default function Swap() {
           </div>
           <div className="flex justify-between items-center gap-8 mt-[50px]">
             <div className="flex gap-4">
-              <div className="border-b-2 border-white flex justify-between items-center">
+              <div className="border-b-2 border-black flex justify-between items-center">
                 <input
                   type="text"
                   className=" border-none outline-none bg-transparent"
@@ -126,7 +126,7 @@ export default function Swap() {
                 />
                 <button type="button">Send All</button>
               </div>
-              <div className="border-b-2 border-dashed border-white relative ">
+              <div className="border-b-2 border-dashed border-black relative ">
                 <button
                   type="button"
                   className="hover:text-blue-500"
@@ -137,7 +137,7 @@ export default function Swap() {
                   BTC
                 </button>
                 {isMenuVisible1 && (
-                  <div className="absolute right-0 z-10 w-[300px] bg-[#262e48] rounded-3xl px-[10px] py-[10px]">
+                  <div className="absolute right-0 z-10 w-[300px] bg-neutral-300 rounded-3xl px-[10px] py-[10px]">
                     <div className="border-b-2 border-stone-300">
                       <input
                         type="text"
@@ -200,14 +200,14 @@ export default function Swap() {
               </div>
             </div>
             <div className="flex gap-4">
-              <div className="border-b-2 border-white flex justify-between items-center">
+              <div className="border-b-2 border-black flex justify-between items-center">
                 <input
                   type="text"
                   className=" border-none outline-none bg-transparent"
                   placeholder="0.0"
                 />
               </div>
-              <div className="border-b-2 border-dashed border-white relative ">
+              <div className="border-b-2 border-dashed border-black relative ">
                 <button
                   type="button"
                   className="hover:text-blue-500"
@@ -218,7 +218,7 @@ export default function Swap() {
                   BTC
                 </button>
                 {isMenuVisible2 && (
-                  <div className="absolute right-0 z-10 w-[300px] bg-[#262e48] rounded-3xl px-[10px] py-[10px]">
+                  <div className="absolute right-0 z-10 w-[300px] bg-neutral-300  rounded-3xl px-[10px] py-[10px]">
                     <div className="border-b-2 border-stone-300">
                       <input
                         type="text"

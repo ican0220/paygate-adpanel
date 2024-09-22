@@ -69,10 +69,10 @@ export default function History() {
 
       <SideBar/>
 
-      <div className="p-4 sm:ml-64 bg-[#1f2843] text-white">
+      <div className="p-4 sm:ml-64 bg-transparent text-[#2e3755]">
         <div className="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
           <div className="flex gap-4">
-            <button type="button" className="border-2 border-blue-500 px-[10px] rounded-3xl">Receive History</button>
+            <button type="button" className="border-2 border-blue-500 px-[10px] rounded-3xl bg-[#2e3755] text-white">Receive History</button>
             <div className="flex gap-3">
               <div>
                 <span>From:</span>
@@ -90,7 +90,7 @@ export default function History() {
                 {tableHead.map((_, index) => (
                   <th
                     scope="col"
-                    className="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500 bg-[#1f2843]"
+                    className="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500 bg-transparent"
                     key={index}
                   >
                     {_.title}
@@ -102,19 +102,19 @@ export default function History() {
               {tableData.map((_, index) => (
                 <tr
                   key={index}
-                  className="hover:cursor-pointer odd:bg-[#1f2843] even:bg-[#262e48] hover:bg-[#2e3755] dark:odd:bg-neutral-800 dark:even:bg-neutral-700 dark:hover:bg-neutral-700"
+                  className="hover:cursor-pointer bg-transparent hover:bg-neutral-400  text-[#2e3755] hover:text-neutral-200 dark:odd:bg-neutral-800 dark:even:bg-neutral-700 dark:hover:bg-neutral-700"
                 >
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-neutral-200">
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium ">
                     <div className="flex items-center gap-3">
                       <Image src={_.img} alt="" width={50} height={50} />
                       <span>{_.amount}</span>
                       <span className="">TRX-USDT</span>
                     </div>
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm  text-neutral-200">
+                  <td className="px-6 py-4 whitespace-nowrap text-sm">
                     {_.to}
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm  text-neutral-200">
+                  <td className="px-6 py-4 whitespace-nowrap text-sm">
                     {_.datetime}
                   </td>
                 </tr>

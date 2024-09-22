@@ -62,11 +62,11 @@ export default function Withdraw() {
 
       <SideBar />
 
-      <div className="p-4 sm:ml-64 bg-[#1f2843] text-white">
+      <div className="p-4 sm:ml-64 bg-transparent text-neutral-800">
         <div className="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
-          <div className="flex justify-center items-center gap-3 text-white">
+          <div className="flex justify-center items-center gap-3">
             <Image src={tableData[0].img} alt="" width={50} height={50} />
-            <h1 className=" border-b-2 border-dashed">Tether USD</h1>
+            <h1 className=" border-b-2 border-neutral-700  border-dashed">Tether USD</h1>
             <span className="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300 uppercase">
               TRX
             </span>
@@ -87,7 +87,7 @@ export default function Withdraw() {
                 {tableHead.map((_, index) => (
                   <th
                     scope="col"
-                    className="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500 bg-[#1f2843]"
+                    className="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500 bg-transparent"
                     key={index}
                   >
                     {_.title}
@@ -99,19 +99,19 @@ export default function Withdraw() {
               {tableData.map((_, index) => (
                 <tr
                   key={index}
-                  className="hover:cursor-pointer odd:bg-[#1f2843] even:bg-[#262e48] hover:bg-[#2e3755] dark:odd:bg-neutral-800 dark:even:bg-neutral-700 dark:hover:bg-neutral-700"
+                  className="hover:cursor-pointer odd:bg-neutral-200 even:bg-neutral-300 hover:bg-neutral-400 dark:odd:bg-neutral-800 dark:even:bg-neutral-700 dark:hover:bg-neutral-700"
                 >
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-neutral-200">
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
                     <div className="flex items-center gap-3">
                       <Image src={_.img} alt="" width={50} height={50} />
                       <span>{_.amount}</span>
                       <span className="">TRX-USDT</span>
                     </div>
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm  text-neutral-200">
+                  <td className="px-6 py-4 whitespace-nowrap text-s">
                     {_.to}
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm  text-neutral-200">
+                  <td className="px-6 py-4 whitespace-nowrap text-s">
                     {_.datetime}
                   </td>
                 </tr>

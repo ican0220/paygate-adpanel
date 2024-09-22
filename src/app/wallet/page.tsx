@@ -80,8 +80,8 @@ export default function Wallet() {
 
       <SideBar />
 
-      <div className="p-4 sm:ml-64 bg-[#1f2843]">
-      <h1 className="text-center text-white">Wallet</h1>
+      <div className="p-4 sm:ml-64 bg-transparent">
+      <h1 className="text-center text-[#1f2843]">Wallet</h1>
         <div className="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
           <div className="flex flex-col">
             <div className="-m-1.5 overflow-x-auto">
@@ -93,7 +93,7 @@ export default function Wallet() {
                         {tableHead.map((_, index) => (
                           <th
                             scope="col"
-                            className="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500 bg-[#1f2843]"
+                            className="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500"
                             key={index}
                           >
                             {_.title}
@@ -105,9 +105,9 @@ export default function Wallet() {
                       {tableData.map((_, index) => (
                         <tr
                           key={index}
-                          className="hover:cursor-pointer odd:bg-[#1f2843] even:bg-[#262e48] hover:bg-[#2e3755] dark:odd:bg-neutral-800 dark:even:bg-neutral-700 dark:hover:bg-neutral-700"
+                          className="hover:cursor-pointer odd:bg-neutral-200 even:bg-neutral-300 hover:bg-neutral-400 dark:odd:bg-neutral-800 dark:even:bg-neutral-700 dark:hover:bg-neutral-700"
                         >
-                          <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-neutral-200">
+                          <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-neutral-800">
                             <div className="flex items-center gap-3">
                               <Image
                                 src={_.img}
@@ -121,16 +121,16 @@ export default function Wallet() {
                               </span>
                             </div>
                           </td>
-                          <td className="px-6 py-4 whitespace-nowrap text-sm  text-neutral-200">
+                          <td className="px-6 py-4 whitespace-nowrap text-sm  text-neutral-800">
                             {_.balance}
                           </td>
-                          <td className="px-6 py-4 whitespace-nowrap text-sm  text-neutral-200">
+                          <td className="px-6 py-4 whitespace-nowrap text-sm  text-neutral-800">
                             {_.value}
                           </td>
-                          <td className="px-6 py-4 whitespace-nowrap text-sm  text-neutral-200">
+                          <td className="px-6 py-4 whitespace-nowrap text-sm  text-neutral-800">
                             {_.price}
                           </td>
-                          <td className="px-6 py-4 whitespace-nowrap text-sm  text-neutral-200">
+                          <td className="px-6 py-4 whitespace-nowrap text-sm  text-neutral-800">
                             {_.hour}
                           </td>
                         </tr>
