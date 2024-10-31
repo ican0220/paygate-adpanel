@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import Image from "next/image";
-import SideBar from "../components/SideBar";
+import SideBar from "../../components/SideBar";
 
 const tableHead = [
   {

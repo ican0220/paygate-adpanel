@@ -11,7 +11,7 @@ export default function SideBar(){
           <ul className="space-y-2 font-medium">
             <li>
               <a
-                href="/wallet"
+                href="/main/wallet"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
                 <svg
@@ -35,7 +35,7 @@ export default function SideBar(){
             </li>
             <li>
               <a
-                href="/swap"
+                href="/main/swap"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
                 <svg
@@ -55,7 +55,7 @@ export default function SideBar(){
             </li>
             <li>
               <a
-                href="/withdraw"
+                href="/main/withdraw"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
                 <svg
@@ -74,7 +74,7 @@ export default function SideBar(){
             </li>
             <li>
               <a
-                href="/history"
+                href="/main/history"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
                 <svg
@@ -102,7 +102,7 @@ export default function SideBar(){
             </li>
             <li>
               <a
-                href="/setting"
+                href="/main/setting"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
                 <svg
@@ -122,7 +122,7 @@ export default function SideBar(){
             </li>
             <li>
               <a
-                href="/support"
+                href="/main/support"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
                 <svg
@@ -131,7 +131,7 @@ export default function SideBar(){
                   id="Layer_1"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 32 32"
-                  enable-background="new 0 0 32 32"
+                  enableBackground="new 0 0 32 32"
                 >
                   <path
                     fill="none"
@@ -158,7 +158,7 @@ export default function SideBar(){
                   id="Layer_1"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 32 32"
-                  enable-background="new 0 0 32 32"
+                  enableBackground="new 0 0 32 32"
                 >
                   <path
                     fill="none"
